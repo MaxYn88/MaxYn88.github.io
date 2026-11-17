@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maxwell Yen | Software Engineer</title>
+  <meta name="description" content="Maxwell Yen is a Computer Science and Music student at UIUC building backend systems and applied machine learning tools. Seeking a Summer 2027 software engineering internship.">
+  <meta property="og:title" content="Maxwell Yen | Software Engineer">
+  <meta property="og:description" content="Backend systems and applied ML, designed around the person using them. Seeking a Summer 2027 software engineering internship.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#eef1f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#080b16" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233856f0'/%3E%3Cstop offset='1' stop-color='%237c4dff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='white'%3EMY%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply a saved theme before first paint so the page does not flash.
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+    } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="backdrop" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Maxwell Yen, back to top">
+        <span class="brand-mark">MY</span>
+        <span class="brand-name">Maxwell Yen</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="status"><span class="status-dot" aria-hidden="true"></span>Seeking a Summer 2027 software engineering internship</p>
+        <h1>Maxwell Yen</h1>
+        <p class="lead">I build backend systems and applied machine learning tools, and I design them around the person who has to use them.</p>
+        <p class="sub">Computer Science and Music at the University of Illinois Urbana-Champaign, class of 2028.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">
+            See my projects
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+          </a>
+          <a class="btn btn-glass" href="mailto:my55@illinois.edu">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7.5 12 13l8.5-5.5"/></svg>
+            Email me
+          </a>
+          <a class="btn btn-glass" href="https://www.linkedin.com/in/maxwell-yen" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.6h.06c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.88 2.5 4.88 5.9v5.45h-4v-4.8c0-1.3-.03-2.95-1.85-2.95-1.85 0-2.15 1.4-2.15 2.85v4.9h-4v-11z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <aside class="glass facts" aria-label="At a glance">
+        <p class="label">At a glance</p>
+        <dl>
+          <div><dt>School</dt><dd>UIUC, B.S. Computer Science + Music</dd></div>
+          <div><dt>Graduating</dt><dd>May 2028</dd></div>
+          <div><dt>Looking for</dt><dd>SWE internship, Summer 2027</dd></div>
+          <div><dt>Strongest in</dt><dd>Python, Java, applied ML and computer vision, full-stack web</dd></div>
+          <div><dt>Right now</dt><dd>IT Support Technician, University of Illinois Technology Services</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <header class="section-head reveal">
+        <p class="label">Projects</p>
+        <h2>What I've built</h2>
+        <p class="section-note">Four projects, with my own part spelled out on each. The repositories are private for now, and I'm glad to walk through the code on a call.</p>
+      </header>
+
+      <article class="glass project project-featured reveal">
+        <div class="project-top">
+          <p class="kicker"><span class="idx">01</span>Research software · Jun 2025 to Aug 2026</p>
+          <h3>Mouse Gait Analysis Pipeline</h3>
+          <p class="project-org">Tissue Biomechanics Laboratory, UIUC</p>
+          <p class="summary">A four-stage Python pipeline that turns raw video of a walking mouse into gait metrics, translated from the lab's MATLAB workflow. Co-developed with one other researcher.</p>
+        </div>
+
+        <ol class="pipeline" aria-label="Pipeline stages">
+          <li><span class="step-num">1</span><strong>Enhance</strong><span>CLAHE contrast correction with OpenCV</span></li>
+          <li><span class="step-num">2</span><strong>Track</strong><span>GPU-accelerated pose estimation with DeepLabCut</span></li>
+          <li><span class="step-num">3</span><strong>Clean</strong><span>Confidence and jump filtering, lens-distortion correction, cubic interpolation</span></li>
+          <li><span class="step-num">4</span><strong>Measure</strong><span>Gait metrics in MATLAB, called from Python through the MATLAB Engine API</span></li>
+        </ol>
+
+        <div class="project-body">
+          <div class="stats" aria-label="Results">
+            <div class="stat"><span class="stat-value">60% → 78%</span><span class="stat-label">missing-keypoint recovery</span></div>
+            <div class="stat"><span class="stat-value">120</span><span class="stat-label">videos processed</span></div>
+            <div class="stat"><span class="stat-value">12</span><span class="stat-label">animals</span></div>
+          </div>
+          <div>
+            <p class="mini-head">What I did</p>
+            <ul class="bullets">
+              <li>Designed the keypoint filtering, lens-distortion correction and cubic interpolation, raising missing-keypoint recovery from 60% to 78%.</li>
+              <li>Tracked down a cross-language shape mismatch between the Python and MATLAB stages, then validated pipeline output across experimental cohorts.</li>
+              <li>Automated extraction and plotting of stride length, stance and swing duration, and bout counts with pandas and Matplotlib.</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="tags" aria-label="Technologies">
+          <li>Python</li><li>OpenCV</li><li>DeepLabCut</li><li>MATLAB Engine API</li><li>pandas</li><li>Matplotlib</li><li>CUDA</li><li>YAML</li>
+        </ul>
+      </article>
+
+      <div class="project-grid">
+        <article class="glass project reveal">
+          <p class="kicker"><span class="idx">02</span>Backend · Fall 2026</p>
+          <h3>ServiceDesk</h3>
+          <p class="project-org">IT ticket management system</p>
+          <p class="summary">A ticketing backend modeled on the support queue I work in every week. Built, tested and deployed end to end.</p>
+          <div class="stats" aria-label="Highlights">
+            <div class="stat"><span class="stat-value">EC2</span><span class="stat-label">Dockerized and deployed on AWS</span></div>
+            <div class="stat"><span class="stat-value">CI</span><span class="stat-label">tests and image builds automated</span></div>
+          </div>
+          <p class="mini-head">What I built</p>
+          <ul class="bullets">
+            <li>REST APIs in Java and Spring Boot for ticket creation, assignment, status updates and paginated search on PostgreSQL.</li>
+            <li>JWT authentication and role-based access control with Spring Security, with BCrypt-hashed passwords.</li>
+            <li>JUnit and MockMvc tests for invalid requests, unauthorized access and ticket status transitions.</li>
+            <li>A Docker image deployed to AWS EC2, with GitHub Actions running the tests and image builds.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>PostgreSQL</li><li>Docker</li><li>AWS EC2</li><li>GitHub Actions</li>
+          </ul>
+        </article>
+
+        <article class="glass project reveal">
+          <p class="kicker"><span class="idx">03</span>Hackathon · Feb 2026</p>
+          <h3>The Guardian</h3>
+          <p class="project-org">AI equipment inspection, built for Caterpillar at ImpxIllinois</p>
+          <p class="summary">A voice-first inspection app. A technician talks through a walkaround and gets a CAT-standard report, backed by 3D reconstruction and vector search over inspection standards.</p>
+          <div class="stats" aria-label="Results">
+            <div class="stat"><span class="stat-value">40 → 10 min</span><span class="stat-label">per inspection report, 75% faster</span></div>
+          </div>
+          <p class="mini-head">My part of the team build</p>
+          <ul class="bullets">
+            <li>Built the FastAPI backend that connects the React Native app to Gemini 2.5 Flash, Nerfstudio and Actian Vector AI.</li>
+            <li>Built the Gemini report generation that turns a spoken walkaround into a CAT-standard inspection report.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>FastAPI</li><li>Gemini 2.5 Flash</li><li>React Native</li><li>Nerfstudio</li><li>Actian Vector AI</li>
+          </ul>
+        </article>
+
+        <article class="glass project reveal">
+          <p class="kicker"><span class="idx">04</span>Computer vision · Aug to Dec 2025</p>
+          <h3>VisionBridge</h3>
+          <p class="project-org">Real-time sign language interpreter</p>
+          <p class="summary">Reads American Sign Language from a live webcam and outputs English text and speech, so someone who doesn't sign can follow along.</p>
+          <div class="stats" aria-label="Results">
+            <div class="stat"><span class="stat-value">93%</span><span class="stat-label">test accuracy</span></div>
+            <div class="stat"><span class="stat-value">12</span><span class="stat-label">ASL gestures</span></div>
+            <div class="stat"><span class="stat-value">20</span><span class="stat-label">FPS live</span></div>
+          </div>
+          <p class="mini-head">What I built</p>
+          <ul class="bullets">
+            <li>A Flask and React app that processes live video through OpenCV and TensorFlow at 20 FPS.</li>
+            <li>An inference pipeline from video frames to recognized gestures, English text and synthesized speech.</li>
+            <li>An on-screen confidence indicator, so users can tell when a sign may have been misread.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>Flask</li><li>React</li><li>OpenCV</li><li>TensorFlow</li><li>scikit-learn</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <header class="section-head reveal">
+        <p class="label">Experience</p>
+        <h2>Where I've worked</h2>
+      </header>
+
+      <div class="glass timeline reveal">
+        <article class="role">
+          <p class="role-date">May 2026 to present</p>
+          <div>
+            <h3>IT Support Technician</h3>
+            <p class="role-org">University of Illinois Technology Services</p>
+            <ul class="bullets">
+              <li>Troubleshoot networking, authentication, VPN and virtual desktop issues, resolving 25 tickets a week with root-cause analysis.</li>
+              <li>Deploy and administer 45 Windows and macOS workstations, user accounts, wireless devices and access-control systems.</li>
+              <li>Support operational technology for 2 live athletic events a month, including statistics platforms, media networking and venue systems.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="role-date">Jun 2025 to Aug 2026</p>
+          <div>
+            <h3>Research Software Engineering</h3>
+            <p class="role-org">Tissue Biomechanics Laboratory, Mechanical Science &amp; Engineering, UIUC</p>
+            <ul class="bullets">
+              <li>Co-developed a four-stage Python pipeline for automated gait analysis with OpenCV enhancement and GPU-accelerated DeepLabCut.</li>
+              <li>Resolved cross-language integration issues between Python and MATLAB and validated outputs across experimental cohorts. <a class="inline-link" href="#projects">See the project</a>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="role-date">Aug 2025 to present</p>
+          <div>
+            <h3>Software Developer</h3>
+            <p class="role-org">Data Science Development Group (Founder and Treasurer) and Arpeggia (Outreach Director), UIUC</p>
+            <ul class="bullets">
+              <li>Built and deployed 2 production web applications with React and Next.js on Vercel, owning UI, frontend and hosting.</li>
+              <li>Built member sign-up, event announcement and volunteer scheduling workflows serving 150+ users, from requirements gathered with non-technical club leaders.</li>
+              <li>Founded DSDG, a data-consulting student organization, and set the documentation and tooling standards its project teams use.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <header class="section-head reveal">
+        <p class="label">Skills</p>
+        <h2>What I work with</h2>
+      </header>
+
+      <div class="glass skills reveal">
+        <div class="skill-row">
+          <h3>Languages</h3>
+          <ul class="tags"><li>Java</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>C++</li><li>R</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Backend and web</h3>
+          <ul class="tags"><li>Spring Boot</li><li>Spring Security</li><li>PostgreSQL</li><li>REST APIs</li><li>JWT</li><li>FastAPI</li><li>Flask</li><li>React</li><li>Next.js</li><li>React Native</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Data and ML</h3>
+          <ul class="tags"><li>TensorFlow</li><li>OpenCV</li><li>scikit-learn</li><li>pandas</li><li>Matplotlib</li><li>DeepLabCut</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Cloud and infrastructure</h3>
+          <ul class="tags"><li>AWS</li><li>Docker</li><li>GitHub Actions</li><li>CI/CD</li><li>Linux</li><li>Vercel</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Tools and systems</h3>
+          <ul class="tags"><li>Git</li><li>JUnit</li><li>MockMvc</li><li>MATLAB</li><li>Active Directory</li><li>TCP/IP</li><li>DNS</li><li>DHCP</li><li>VPN</li><li>VDI</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <header class="section-head reveal">
+        <p class="label">About</p>
+        <h2>How I work</h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="glass about-copy reveal">
+          <p>I'm a Computer Science and Music double major at the University of Illinois Urbana-Champaign, graduating in May 2028. I came to CS from a performing-arts high school, and that background shaped how I build: I start with the person on the other side of the software.</p>
+          <p>On VisionBridge, that meant adding a confidence indicator so a user could tell when a sign might have been misread. In the lab, it meant checking that our Python pipeline matched the MATLAB it was translated from before anyone relied on its numbers.</p>
+          <p>I'm most at home in Python and Java, working on backend systems and applied ML, and I'm looking for a Summer 2027 internship where I can do more of both.</p>
+        </div>
+
+        <div class="beyond">
+          <p class="label reveal">Beyond code</p>
+          <div class="glass tile reveal">
+            <h3>Founder</h3>
+            <p>Started the Data Science Development Group at UIUC, now 150+ members.</p>
+          </div>
+          <div class="glass tile reveal">
+            <h3>Pianist</h3>
+            <p>Ten years of piano, including an invitation to perform solo at Carnegie Hall.</p>
+          </div>
+          <div class="glass tile reveal">
+            <h3>Bilingual</h3>
+            <p>English and Mandarin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <div class="glass contact reveal">
+        <p class="label">Contact</p>
+        <h2>Let's talk about Summer 2027</h2>
+        <p class="contact-note">I'm looking for a software engineering internship. Email is the fastest way to reach me.</p>
+        <a class="email-link" href="mailto:my55@illinois.edu">my55@illinois.edu</a>
+        <div class="cta-row cta-center">
+          <a class="btn btn-primary" href="mailto:my55@illinois.edu">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7.5 12 13l8.5-5.5"/></svg>
+            Send an email
+          </a>
+          <button class="btn btn-glass" id="copy-email" type="button" data-email="my55@illinois.edu">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15"/></svg>
+            <span id="copy-email-text">Copy address</span>
+          </button>
+          <a class="btn btn-glass" href="https://www.linkedin.com/in/maxwell-yen" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.6h.06c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.88 2.5 4.88 5.9v5.45h-4v-4.8c0-1.3-.03-2.95-1.85-2.95-1.85 0-2.15 1.4-2.15 2.85v4.9h-4v-11z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year">2026</span> Maxwell Yen</p>
+    <p>Built with plain HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
